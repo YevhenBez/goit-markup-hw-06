@@ -13,6 +13,7 @@
     --icon-staff: #AFB1B8;
     --icon-bg-hover: #2196F3;
     --icon-accent: #FFFFFF;
+    --green: #0b951b;
 }
 
 h1,
@@ -699,6 +700,10 @@ ul {
     line-height: 1.71;
 }
 
+.footer-join {
+    margin-right: 93px;
+}
+
 .footer-title {
     color: var(--icon-accent);
     font-family: Roboto;
@@ -737,6 +742,65 @@ ul {
 .footer-link-icon:focus {
     background-color: var(--icon-bg-hover);
     outline: none;
+}
+
+.footer-text {
+    color: var(--icon-accent);
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.footer-in-mail {
+    color: var(--green);
+
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    
+    letter-spacing: 0.03em;
+    
+    padding-left: 16px;
+    margin-right: 12px;
+}
+
+.footer-in-mail::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+}
+
+.footer-btn-mailing {
+    width: 200px;
+    padding: 10px 62px 10px 28px;
+    border-radius: 4px;
+    border: 0px;
+    color: var(--button-accent-color);
+    background-color: var(--accent-color);
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.06em;
 }
 
 /* modal window */
