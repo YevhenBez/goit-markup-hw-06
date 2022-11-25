@@ -755,6 +755,10 @@ ul {
     margin-bottom: 20px;
 }
 
+.footer-mailing {
+    display: flex;
+}
+
 .footer-in-mail {
     color: var(--green);
 
