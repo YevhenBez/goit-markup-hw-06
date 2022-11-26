@@ -945,6 +945,17 @@ ul {
     margin-bottom: 4px;
 }
 
+.person-name {
+    position: relative;
+}
+
+.icon-person {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .backdrop-name {
     width: 100%;
     height: 40px;
