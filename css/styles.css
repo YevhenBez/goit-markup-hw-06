@@ -17,6 +17,7 @@
     --mistake: #950b0d;
     --error: #eaed3b;
     --border-backdrop: rgba(33, 33, 33, 0.2);
+    --accent-bg-color: #188CE8;
 }
 
 h1,
@@ -523,7 +524,7 @@ ul {
     color: var(--button-accent-color);
     background-color: var(--accent-color);
 
-    transition-property: box-shadow;
+    transition-property: box-shadow, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -533,6 +534,7 @@ ul {
 .hero-button:hover,
 .hero-button:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--accent-bg-color);
 }
 
 .button-all {
@@ -843,6 +845,15 @@ ul {
     letter-spacing: 0.06em;
 
     cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn-mailing:hover,
+.footer-btn-mailing:focus {
+    background-color: var(--accent-bg-color);
 }
 
 .icon-plane {
