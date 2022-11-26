@@ -403,8 +403,16 @@
             <div>
                 <p class="footer-text">підпишіться на розсилку</p>
                 <form class="footer-mailing">
-                    <input type="email" name="user-email" class="footer-in-mail" placeholder="E-mail" required >
-                    <button class="footer-btn-mailing" type="submit">Підписатися</button>
+                    <div>
+                        <input type="email" name="user-email" class="footer-in-mail" placeholder="E-mail" required title="some@some.some" >
+                        <p class="error">Формат E-mail<br>повинен бути some@some.some</p>
+                    </div>
+                    <div class="footer-send">
+                        <button class="footer-btn-mailing" type="submit">Підписатися</button>
+                        <svg class="icon-plane" width="24" height="24">
+                            <use href="./images/icons.svg#send"></use>
+                        </svg>
+                    </div>
                 </form>
             </div>
         </div>
