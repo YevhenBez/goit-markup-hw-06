@@ -1020,11 +1020,6 @@ ul {
     fill: var(--accent-color);
 }
 
-.icon-person:hover,
-.icon-tel:hover {
-    fill: var(--accent-color);
-} 
-
 .person-tel {
     position: relative;
 
