@@ -403,8 +403,9 @@
             <div>
                 <p class="footer-text">підпишіться на розсилку</p>
                 <form class="footer-mailing">
+                    <label for="user-email"></label>
                     <div>
-                        <input type="email" name="user-email" class="footer-in-mail" placeholder="E-mail" required title="some@some.some" >
+                        <input type="email" name="email" class="footer-in-mail" placeholder="E-mail" required title="some@some.some" id="user-email" >
                         <p class="error">Формат E-mail<br>повинен бути some@some.some</p>
                     </div>
                     <div class="footer-send">
@@ -426,9 +427,9 @@
             </button>
             <p class="backdrop-title">Залиште свої дані, ми вам передзвонимо</p>
             <form class="backdrop-inf">
-                <p class="name-user">Ім'я</p>
+                <label for="user-name" class="name-user">Ім'я</label>
                 <div class="person-name">
-                    <input type="text" name="user-name" class="backdrop-name" required >
+                    <input minlength="2" type="text" name="name" class="backdrop-name" required id="user-name" >
                     <svg class="icon-person" width="18px" height="18px">
                         <use href="./images/icons.svg#person"></use>
                     </svg>
