@@ -1013,17 +1013,17 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop-name:hover+.icon-person,
-.backdrop-name:focus+.icon-person,
-.backdrop-tel:hover+.icon-tel,
-.backdrop-tel:focus+.icon-tel {
+.backdrop-name:hover + .icon-person,
+.backdrop-name:focus + .icon-person,
+.backdrop-tel:hover + .icon-tel,
+.backdrop-tel:focus + .icon-tel {
     fill: var(--accent-color);
 }
 
 .icon-person:hover,
 .icon-tel:hover {
     fill: var(--accent-color);
-}
+} 
 
 .person-tel {
     position: relative;
