@@ -935,7 +935,8 @@ ul {
 }
 
 .name-user,
-.tel-user {
+.tel-user,
+.mail-user {
     display: block;
 
     font-family: Roboto;
@@ -964,7 +965,8 @@ ul {
 }
 
 .backdrop-name,
-.backdrop-tel {
+.backdrop-tel,
+.backdrop-mail {
     width: 100%;
     height: 40px;
 
@@ -994,20 +996,24 @@ ul {
 .backdrop-name:hover,
 .backdrop-name:focus,
 .backdrop-tel:hover,
-.backdrop-tel:focus {
+.backdrop-tel:focus,
+.backdrop-mail:hover,
+.backdrop-mail:focus {
     border-color: var(--accent-color);
 }
 
 
 
 .backdrop-name:not(:focus):invalid,
-.backdrop-tel:not(:focus):invalid {
+.backdrop-tel:not(:focus):invalid,
+.backdrop-mail:not(:focus):invalid {
     color: var(--mistake);
     font-weight: 900
 }
 
 .icon-person,
-.icon-tel {
+.icon-tel,
+.icon-mail {
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1016,7 +1022,9 @@ ul {
 .backdrop-name:hover + .icon-person,
 .backdrop-name:focus + .icon-person,
 .backdrop-tel:hover + .icon-tel,
-.backdrop-tel:focus + .icon-tel {
+.backdrop-tel:focus + .icon-tel,
+.backdrop-mail:hover + .icon-mail,
+.backdrop-mail:focus + .icon-mail {
     fill: var(--accent-color);
 }
 
@@ -1024,9 +1032,28 @@ ul {
     position: relative;
 
     cursor: pointer;
+
+    margin-bottom: 10px;
 }
 
 .icon-tel {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.person-mail {
+    position: relative;
+
+    cursor: pointer;
+}
+
+/* .backdrop-mail:not(:focus):invalid {
+    background-color: var(--mistake);
+} */
+
+.icon-mail {
     position: absolute;
     left: 12px;
     top: 50%;
