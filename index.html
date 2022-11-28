@@ -403,17 +403,15 @@
             <div>
                 <p class="footer-text">підпишіться на розсилку</p>
                 <form class="footer-mailing">
-                    <label for="user-email"></label>
                     <div>
                         <input type="email" name="email" class="footer-in-mail" placeholder="E-mail" required title="some@some.some" id="user-email" >
                         <p class="error">Формат E-mail<br>повинен бути some@some.some</p>
                     </div>
-                    <div class="footer-send">
-                        <button class="footer-btn-mailing" type="submit">Підписатися</button>
+                    <button class="footer-btn-mailing" type="submit">Підписатися
                         <svg class="icon-plane" width="24" height="24">
                             <use href="./images/icons.svg#send"></use>
                         </svg>
-                    </div>
+                    </button>
                 </form>
             </div>
         </div>
@@ -436,7 +434,7 @@
                 </div>
                 <label for="user-tel" class="tel-user">Телефон</label>
                 <div class="person-tel">
-                    <input minlength="19" type="tel" name="telephone" class="backdrop-tel" title="Напишіть телефон у форматі +380-(11)-111-11-11" required
+                    <input minlength="10" type="tel" name="telephone" class="backdrop-tel" title="Напишіть телефон у форматі +380-(11)-111-11-11" required
                         id="user-tel">
                     <svg class="icon-tel" width="18px" height="18px">
                         <use href="./images/icons.svg#phone"></use>
