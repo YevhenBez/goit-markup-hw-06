@@ -911,12 +911,23 @@ ul {
     top: 8px;
     right: 8px;
 
+    outline: none;
+
     padding: 0px;
     border: 0px;
 
     background-color: transparent;
 
     cursor: pointer;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-modal:hover .modal-close,
+.button-modal:focus .modal-close {
+    fill: var(--accent-color);
 }
 
 .backdrop-title {
@@ -1081,6 +1092,8 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     resize: none;
+
+    margin-bottom: 20px;
 }
 
 .modal-comment::placeholder {
@@ -1092,4 +1105,98 @@ ul {
     line-height: 1.16;
     
     letter-spacing: 0.01em;
+}
+
+.modal-check {
+    display: none;
+}
+
+.modal-check:checked + .modal-agreement span {
+    background-color: var(--accent-color);
+    fill: var(--icon-accent);
+    border: none;
+}
+
+.check-agreement {
+    display: flex;
+    padding-left: 10px;
+
+    margin-bottom: 30px;
+}
+
+.modal-agreement {
+    display: flex;
+    color: var(--primary-text-color);
+    
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    
+    letter-spacing: 0.03em;
+    align-items: center;
+
+    margin-right: 7px;
+}
+
+.modal-agreement span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8.38px;
+    fill: transparent;
+}
+
+.agreement {
+    color: var(--accent-color);
+    
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    
+    letter-spacing: 0.03em;
+}
+
+.btn-modal {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-btn {
+    color: var(--button-accent-color);
+    width: 200px;
+    height: 50px;
+
+    outline: none;
+
+    border: 0;
+
+    border-radius: 4px;
+
+    padding: 10px 52px;
+
+    background-color: var(--accent-color);
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+background-color: var(--accent-bg-color);
 }
